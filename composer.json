@@ -1,0 +1,42 @@
+{
+    "name": "shailesh-matariya/gsuite-addon-php",
+    "description": "For the gsuite addon card services alternatives",
+    "keywords": [
+        "shailesh-matariya",
+        "gsuite-addon-alternative-php"
+    ],
+    "homepage": "https://github.com/shailesh-matariya/gsuite-addon-alternative-php",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Shailesh Matariya",
+            "email": "patel.shailesh987@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ShaileshMatariya\\Gsuite\\Addon\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ShaileshMatariya\\Gsuite\\Addon\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
