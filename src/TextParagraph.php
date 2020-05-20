@@ -2,7 +2,8 @@
 
 namespace ShaileshMatariya\Gsuite\Addon;
 
-class TextParagraph extends \Google_Model
+/** @id /properties/text_paragraph */
+class TextParagraph extends GoogleModel
 {
     /** @var string */
     public $text;

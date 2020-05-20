@@ -1,18 +1,13 @@
 <?php
 
-
 namespace ShaileshMatariya\Gsuite\Addon;
 
-
-use ShaileshMatariya\Gsuite\Addon\Utils\OnClose;
-use ShaileshMatariya\Gsuite\Addon\Utils\OpenAs;
-
-class OpenLink extends \Google_Model
+class OpenLink extends GoogleModel
 {
-    /** @var string */
+    /** @var string  "enum": ["NOTHING","RELOAD"] */
     public $on_close;
 
-    /** @var string */
+    /** @var string  "enum": [ "FULL_SIZE", "OVERLAY" ] */
     public $open_as;
 
     /** @var string */

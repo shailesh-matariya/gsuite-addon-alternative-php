@@ -2,10 +2,7 @@
 
 namespace ShaileshMatariya\Gsuite\Addon;
 
-use ShaileshMatariya\Gsuite\Addon\Actions\RenderAction;
-use ShaileshMatariya\Gsuite\Addon\Actions\ResponseAction;
-
-class ResponseBuilder extends \Google_Model
+class ResponseBuilder extends GoogleModel
 {
     /** @var Notification */
     public $notification;

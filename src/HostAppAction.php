@@ -1,10 +1,8 @@
 <?php
 
-namespace ShaileshMatariya\Gsuite\Addon\Actions;
+namespace ShaileshMatariya\Gsuite\Addon;
 
-use Google_Model;
-
-class HostAppAction extends Google_Model
+class HostAppAction extends GoogleModel
 {
-
+    /** @TODO host_app_action_schema.json */
 }

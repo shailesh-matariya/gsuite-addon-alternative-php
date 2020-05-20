@@ -2,10 +2,7 @@
 
 namespace ShaileshMatariya\Gsuite\Addon;
 
-use Google_Model;
-use ShaileshMatariya\Gsuite\Addon\Utils\ImageStyle;
-
-class CardHeader extends Google_Model
+class CardHeader extends GoogleModel
 {
     /** @var string */
     public $image_alt_text;
@@ -19,8 +16,8 @@ class CardHeader extends Google_Model
     /** @var string */
     public $title;
 
-    /** @var ImageStyle */
-    public $image_style;
+    /** @var string  "enum": [ "SQUARE", "CIRCLE" ],  */
+    public $image_type;
 
     /**
      * @return string
@@ -45,19 +42,19 @@ class CardHeader extends Google_Model
     /**
      * @return string
      */
-    public function getImageStyle(): string
+    public function getImageType(): string
     {
-        return $this->image_style;
+        return $this->image_type;
     }
 
     /**
-     * @param string $image_style
+     * @param string $image_type
      *
      * @return CardHeader
      */
-    public function setImageStyle(string $image_style): CardHeader
+    public function setImageType(string $image_type): CardHeader
     {
-        $this->image_style = $image_style;
+        $this->image_type = $image_type;
 
         return $this;
     }

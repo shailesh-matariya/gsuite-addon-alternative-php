@@ -2,9 +2,7 @@
 
 namespace ShaileshMatariya\Gsuite\Addon;
 
-use Google_Model;
-
-class CardBuilder extends Google_Model
+class Card extends GoogleModel
 {
     /** @var string */
     public $name;
@@ -13,15 +11,15 @@ class CardBuilder extends Google_Model
     public $header;
 
     /** @var CardAction */
-    public $card_action;
+    public $card_actions;
 
     /** @var string */
     public $display_style;
 
-    /** @var CardSection[] */
+    /** @var Section[] */
     public $sections;
 
-    /** @var FixedFooter */
+    /** @var CardFixedFooter */
     public $fixed_footer;
 
     /** @var CardHeader */
@@ -38,9 +36,9 @@ class CardBuilder extends Google_Model
     /**
      * @param string $name
      *
-     * @return CardBuilder
+     * @return Card
      */
-    public function setName(string $name): CardBuilder
+    public function setName(string $name): Card
     {
         $this->name = $name;
 
@@ -58,9 +56,9 @@ class CardBuilder extends Google_Model
     /**
      * @param CardHeader $header
      *
-     * @return CardBuilder
+     * @return Card
      */
-    public function setHeader(CardHeader $header): CardBuilder
+    public function setHeader(CardHeader $header): Card
     {
         $this->header = $header;
 
@@ -68,7 +66,7 @@ class CardBuilder extends Google_Model
     }
 
     /**
-     * @return CardSection[]
+     * @return Section[]
      */
     public function getSections()
     {
@@ -76,11 +74,11 @@ class CardBuilder extends Google_Model
     }
 
     /**
-     * @param CardSection $section
+     * @param Section $section
      *
-     * @return CardBuilder
+     * @return Card
      */
-    public function addSection(CardSection $section): CardBuilder
+    public function addSection(Section $section): Card
     {
         $this->sections[] = $section;
 
@@ -90,19 +88,19 @@ class CardBuilder extends Google_Model
     /**
      * @return CardAction
      */
-    public function getCardAction(): CardAction
+    public function getCardActions(): CardAction
     {
-        return $this->card_action;
+        return $this->card_actions;
     }
 
     /**
-     * @param CardAction $card_action
+     * @param CardAction $card_actions
      *
-     * @return CardBuilder
+     * @return Card
      */
-    public function setCardAction(CardAction $card_action): CardBuilder
+    public function setCardActions(CardAction $card_actions): Card
     {
-        $this->card_action = $card_action;
+        $this->card_actions = $card_actions;
 
         return $this;
     }
@@ -118,9 +116,9 @@ class CardBuilder extends Google_Model
     /**
      * @param string $display_style
      *
-     * @return CardBuilder
+     * @return Card
      */
-    public function setDisplayStyle(string $display_style): CardBuilder
+    public function setDisplayStyle(string $display_style): Card
     {
         $this->display_style = $display_style;
 
@@ -128,19 +126,19 @@ class CardBuilder extends Google_Model
     }
 
     /**
-     * @return FixedFooter
+     * @return CardFixedFooter
      */
-    public function getFixedFooter(): FixedFooter
+    public function getFixedFooter(): CardFixedFooter
     {
         return $this->fixed_footer;
     }
 
     /**
-     * @param FixedFooter $fixed_footer
+     * @param CardFixedFooter $fixed_footer
      *
-     * @return CardBuilder
+     * @return Card
      */
-    public function setFixedFooter(FixedFooter $fixed_footer): CardBuilder
+    public function setFixedFooter(CardFixedFooter $fixed_footer): Card
     {
         $this->fixed_footer = $fixed_footer;
 
@@ -158,9 +156,9 @@ class CardBuilder extends Google_Model
     /**
      * @param CardHeader $peek_card_header
      *
-     * @return CardBuilder
+     * @return Card
      */
-    public function dfsetPeekCardHeader(CardHeader $peek_card_header): CardBuilder
+    public function dfsetPeekCardHeader(CardHeader $peek_card_header): Card
     {
         $this->peek_card_header = $peek_card_header;
 

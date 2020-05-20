@@ -2,55 +2,50 @@
 
 namespace ShaileshMatariya\Gsuite\Addon;
 
-use Google_Model;
-use ShaileshMatariya\Gsuite\Addon\Actions\Action;
-use ShaileshMatariya\Gsuite\Addon\Actions\AuthorizationAction;
-
-class CardAction extends Google_Model
+class CardAction extends GoogleModel
 {
-    /** @var AuthorizationAction */
-    public $action;
+    /** @var string */
+    public $action_label;
+
+    /** @var OnClick */
+    public $on_click;
 
     /**
-     * @param AuthorizationAction $action
+     * @return string
+     */
+    public function getActionLabel(): string
+    {
+        return $this->action_label;
+    }
+
+    /**
+     * @param string $action_label
      *
      * @return CardAction
      */
-    public function setAuthorizationAction(AuthorizationAction $action): CardAction
+    public function setActionLabel(string $action_label): CardAction
     {
-        $this->action = $action;
+        $this->action_label = $action_label;
 
         return $this;
     }
 
     /**
-     * @return AuthorizationAction
+     * @return OnClick
      */
-    public function getAuthorizationAction(): AuthorizationAction
+    public function getOnClick(): OnClick
     {
-        return $this->action;
+        return $this->on_click;
     }
 
     /**
-     * @param Action $action
+     * @param OnClick $on_click
      *
      * @return CardAction
      */
-    public function setOnClickAction(Action $action): CardAction
+    public function setOnClick(OnClick $on_click): CardAction
     {
-        $this->action = $action;
-
-        return $this;
-    }
-
-    /**
-     * @param Action $action
-     *
-     * @return CardAction
-     */
-    public function setOnClickOpenLinkAction(Action $action): CardAction
-    {
-        $this->action = $action;
+        $this->on_click = $on_click;
 
         return $this;
     }

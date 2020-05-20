@@ -1,10 +1,8 @@
 <?php
 
-
 namespace ShaileshMatariya\Gsuite\Addon;
 
-
-class Navigation extends \Google_Model
+class Navigation extends GoogleModel
 {
     /** @var boolean */
     public $pop_to_root;

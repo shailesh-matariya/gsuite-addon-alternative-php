@@ -1,12 +1,10 @@
 <?php
 
-
 namespace ShaileshMatariya\Gsuite\Addon;
 
-
-class CardSection extends \Google_Model
+class Section extends GoogleModel
 {
-    /** @var Widget[] */
+    /** @var Widget[] required */
     public $widgets;
 
     /** @var boolean */
@@ -16,7 +14,7 @@ class CardSection extends \Google_Model
     public $header;
 
     /** @var int */
-    public $numUncollapsibleWidgets;
+    public $uncollapsible_widgets_count;
 
     /**
      * @return Widget[]
@@ -29,9 +27,9 @@ class CardSection extends \Google_Model
     /**
      * @param Widget $widget
      *
-     * @return CardSection
+     * @return Section
      */
-    public function addWidget(Widget $widget): CardSection
+    public function addWidget(Widget $widget): Section
     {
         $this->widgets[] = $widget;
 
@@ -49,9 +47,9 @@ class CardSection extends \Google_Model
     /**
      * @param bool $collapsible
      *
-     * @return CardSection
+     * @return Section
      */
-    public function setCollapsible(bool $collapsible): CardSection
+    public function setCollapsible(bool $collapsible): Section
     {
         $this->collapsible = $collapsible;
 
@@ -69,9 +67,9 @@ class CardSection extends \Google_Model
     /**
      * @param string $header
      *
-     * @return CardSection
+     * @return Section
      */
-    public function setHeader(string $header): CardSection
+    public function setHeader(string $header): Section
     {
         $this->header = $header;
 
@@ -81,19 +79,19 @@ class CardSection extends \Google_Model
     /**
      * @return int
      */
-    public function getNumUncollapsibleWidgets(): int
+    public function getUncollapsibleWidgetsCount(): int
     {
-        return $this->numUncollapsibleWidgets;
+        return $this->uncollapsible_widgets_count;
     }
 
     /**
-     * @param int $numUncollapsibleWidgets
+     * @param int $uncollapsible_widgets_count
      *
-     * @return CardSection
+     * @return Section
      */
-    public function setNumUncollapsibleWidgets(int $numUncollapsibleWidgets): CardSection
+    public function setUncollapsibleWidgetsCount(int $uncollapsible_widgets_count): Section
     {
-        $this->numUncollapsibleWidgets = $numUncollapsibleWidgets;
+        $this->uncollapsible_widgets_count = $uncollapsible_widgets_count;
 
         return $this;
     }

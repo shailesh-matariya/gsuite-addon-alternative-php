@@ -1,13 +1,8 @@
 <?php
 
-namespace ShaileshMatariya\Gsuite\Addon\Actions;
+namespace ShaileshMatariya\Gsuite\Addon;
 
-use Google_Model;
-use ShaileshMatariya\Gsuite\Addon\Navigation;
-use ShaileshMatariya\Gsuite\Addon\Notification;
-use ShaileshMatariya\Gsuite\Addon\OpenLink;
-
-class ResponseAction extends Google_Model
+class ResponseAction extends GoogleModel
 {
     /** @var Navigation[] */
     public $navigations;

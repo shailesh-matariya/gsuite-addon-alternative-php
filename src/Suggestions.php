@@ -1,16 +1,14 @@
 <?php
 
-
 namespace ShaileshMatariya\Gsuite\Addon;
 
-
-class Suggestions extends \Google_Model
+class Suggestions extends GoogleModel
 {
-    /** @var string[]*/
+    /** @var SuggestionItem[] */
     public $suggestions;
 
     /**
-     * @return string[]
+     * @return SuggestionItem[]
      */
     public function getSuggestions(): array
     {
@@ -18,11 +16,11 @@ class Suggestions extends \Google_Model
     }
 
     /**
-     * @param string $suggestion
+     * @param SuggestionItem $suggestion
      *
      * @return Suggestions
      */
-    public function addSuggestion(string $suggestion): Suggestions
+    public function addSuggestion(SuggestionItem $suggestion): Suggestions
     {
         $this->suggestions[] = $suggestion;
 
@@ -30,13 +28,25 @@ class Suggestions extends \Google_Model
     }
 
     /**
-     * @param string[] $suggestions
+     * @param SuggestionItem[] $suggestions
      *
      * @return Suggestions
      */
     public function addSuggestions(array $suggestions): Suggestions
     {
         $this->suggestions = array_merge($this->$suggestions, $suggestions);
+
+        return $this;
+    }
+
+    /**
+     * @param SuggestionItem[] $suggestions
+     *
+     * @return Suggestions
+     */
+    public function setSuggestions(array $suggestions): Suggestions
+    {
+        $this->suggestions = $suggestions;
 
         return $this;
     }

@@ -1,9 +1,9 @@
 <?php
 
-namespace ShaileshMatariya\Gsuite\Addon\Utils;
+namespace ShaileshMatariya\Gsuite\Addon;
 
 /** @link  https://developers.google.com/apps-script/reference/card-service/icon */
-class Icon
+class Icon extends GoogleModel
 {
     const NONE = 'NONE';
     const AIRPLANE = 'AIRPLANE';
@@ -36,4 +36,73 @@ class Icon
     const TRAIN = 'TRAIN';
     const VIDEO_CAMERA = 'VIDEO_CAMERA';
     const VIDEO_PLAY = 'VIDEO_PLAY';
+
+    /** @var string */
+    public $known_icon;
+
+    /** @var string */
+    public $icon_url;
+
+    /** @var string */
+    public $alt_text;
+
+    /**
+     * @return string
+     */
+    public function getKnownIcon(): string
+    {
+        return $this->known_icon;
+    }
+
+    /**
+     * @param string $known_icon
+     *
+     * @return Icon
+     */
+    public function setKnownIcon(string $known_icon): Icon
+    {
+        $this->known_icon = $known_icon;
+
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getIconUrl(): string
+    {
+        return $this->icon_url;
+    }
+
+    /**
+     * @param string $icon_url
+     *
+     * @return Icon
+     */
+    public function setIconUrl(string $icon_url): Icon
+    {
+        $this->icon_url = $icon_url;
+
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getAltText(): string
+    {
+        return $this->alt_text;
+    }
+
+    /**
+     * @param string $alt_text
+     *
+     * @return Icon
+     */
+    public function setAltText(string $alt_text): Icon
+    {
+        $this->alt_text = $alt_text;
+
+        return $this;
+    }
 }

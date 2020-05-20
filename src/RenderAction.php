@@ -1,10 +1,8 @@
 <?php
 
-namespace ShaileshMatariya\Gsuite\Addon\Actions;
+namespace ShaileshMatariya\Gsuite\Addon;
 
-use Google_Model;
-
-class RenderAction extends Google_Model
+class RenderAction extends GoogleModel
 {
     /** @var ResponseAction */
     public $action;

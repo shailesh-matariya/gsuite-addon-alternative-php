@@ -2,15 +2,16 @@
 
 namespace ShaileshMatariya\Gsuite\Addon;
 
-use ShaileshMatariya\Gsuite\Addon\Utils\CommonAction;
-
-class Image extends CommonAction
+class Image extends GoogleModel
 {
     /** @var string */
     public $alt_text;
 
     /** @var string */
     public $image_url;
+
+    /** @var OnClick */
+    public $on_click;
 
     /**
      * @return string
@@ -51,4 +52,24 @@ class Image extends CommonAction
 
         return $this;
     }
+
+    /**
+     * @return OnClick
+     */
+    public function getOnClick(): OnClick
+    {
+        return $this->on_click;
+    }
+
+    /**
+     * @param OnClick $on_click
+     *
+     * @return Image
+     */
+    public function setOnClick(OnClick $on_click): Image
+    {
+        $this->on_click = $on_click;
+
+        return $this;
+}
 }

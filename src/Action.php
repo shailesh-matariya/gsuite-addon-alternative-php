@@ -1,76 +1,28 @@
 <?php
 
-namespace ShaileshMatariya\Gsuite\Addon\Actions;
+namespace ShaileshMatariya\Gsuite\Addon;
 
-use Google_Model;
-
-class Action extends Google_Model
+class Action extends GoogleModel
 {
     /** @var string */
-    protected $function_name;
-
-    /** @var string */
-    protected $load_indicator;
-
-    /** @var object */
-    protected $parameters;
+    protected $function;
 
     /**
      * @return string
      */
-    public function getFunctionName(): string
+    public function getFunction(): string
     {
-        return $this->function_name;
+        return $this->function;
     }
 
     /**
-     * @param string $function_name
+     * @param string $function
      *
      * @return Action
      */
-    public function setFunctionName(string $function_name): Action
+    public function setFunction(string $function): Action
     {
-        $this->function_name = $function_name;
-
-        return $this;
-    }
-
-    /**
-     * @return string
-     */
-    public function getLoadIndicator(): string
-    {
-        return $this->load_indicator;
-    }
-
-    /**
-     * @param string $load_indicator
-     *
-     * @return Action
-     */
-    public function setLoadIndicator(string $load_indicator): Action
-    {
-        $this->load_indicator = $load_indicator;
-
-        return $this;
-    }
-
-    /**
-     * @return object
-     */
-    public function getParameters()
-    {
-        return $this->parameters;
-    }
-
-    /**
-     * @param object $parameters
-     *
-     * @return Action
-     */
-    public function setParameters($parameters): Action
-    {
-        $this->parameters = $parameters;
+        $this->function = $function;
 
         return $this;
     }

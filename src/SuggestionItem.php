@@ -2,7 +2,7 @@
 
 namespace ShaileshMatariya\Gsuite\Addon;
 
-class Notification extends GoogleModel
+class SuggestionItem extends GoogleModel
 {
     /** @var string */
     public $text;
@@ -18,9 +18,9 @@ class Notification extends GoogleModel
     /**
      * @param string $text
      *
-     * @return Notification
+     * @return SuggestionItem
      */
-    public function setText(string $text): Notification
+    public function setText(string $text): SuggestionItem
     {
         $this->text = $text;
 
