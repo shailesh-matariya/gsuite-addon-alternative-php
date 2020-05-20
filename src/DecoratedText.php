@@ -10,7 +10,7 @@ class DecoratedText extends GoogleModel
     /** @var Button */
     public $button;
 
-    /** @var string */
+    /** @var Icon */
     public $icon;
 
     /** @var string */
@@ -72,7 +72,7 @@ class DecoratedText extends GoogleModel
     }
 
     /**
-     * @return string
+     * @return Icon
      */
     public function getIcon(): string
     {
@@ -80,11 +80,11 @@ class DecoratedText extends GoogleModel
     }
 
     /**
-     * @param string $icon
+     * @param Icon $icon
      *
      * @return DecoratedText
      */
-    public function setIcon(string $icon): DecoratedText
+    public function setIcon(Icon $icon): DecoratedText
     {
         $this->icon = $icon;
 
