@@ -25,7 +25,7 @@ class Widget extends GoogleModel
     /** @var DateTimePicker */
     public $date_time_picker;
 
-    /** @var string */
+    /** @var string  "enum": [ "START", "CENTER", "END" ] */
     public $horizontal_alignment;
 
     /**

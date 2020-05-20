@@ -13,10 +13,10 @@ class Navigation extends GoogleModel
     /** @var boolean */
     public $pop_to_card;
 
-    /** @var object */
+    /** @var Card */
     public $push_card;
 
-    /** @var object */
+    /** @var Card */
     public $update_card;
 
     /**
@@ -80,19 +80,19 @@ class Navigation extends GoogleModel
     }
 
     /**
-     * @return object
+     * @return Card
      */
-    public function getPushCard()
+    public function getPushCard(): Card
     {
         return $this->push_card;
     }
 
     /**
-     * @param object $push_card
+     * @param Card $push_card
      *
      * @return Navigation
      */
-    public function setPushCard($push_card): Navigation
+    public function setPushCard(Card $push_card): Navigation
     {
         $this->push_card = $push_card;
 
@@ -100,19 +100,19 @@ class Navigation extends GoogleModel
     }
 
     /**
-     * @return object
+     * @return Card
      */
-    public function getUpdateCard()
+    public function getUpdateCard(): Card
     {
         return $this->update_card;
     }
 
     /**
-     * @param object $update_card
+     * @param Card $update_card
      *
      * @return Navigation
      */
-    public function setUpdateCard($update_card): Navigation
+    public function setUpdateCard(Card $update_card): Navigation
     {
         $this->update_card = $update_card;
 
