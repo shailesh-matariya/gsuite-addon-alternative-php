@@ -5,10 +5,10 @@ namespace ShaileshMatariya\Gsuite\Addon;
 class Action extends GoogleModel
 {
     /** @var string */
-    protected $function;
+    public $function;
 
     /** @var Parameter[] */
-    protected $parameters;
+    public $parameters;
 
     /**
      * @return string
