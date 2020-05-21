@@ -4,32 +4,32 @@ namespace ShaileshMatariya\Gsuite\Addon;
 
 class Color extends GoogleModel
 {
-    /** @var integer */
+    /** @var float */
     public $red;
 
-    /** @var integer */
+    /** @var float */
     public $green;
 
-    /** @var integer */
+    /** @var float */
     public $blue;
 
-    /** @var integer The alpha value of the color as a value in the interval [0, 1]. 1 is sloid color and 0 is transparent */
+    /** @var float The alpha value of the color as a value in the interval [0, 1]. 1 is sloid color and 0 is transparent */
     public $alpha;
 
     /**
-     * @return int
+     * @return float
      */
-    public function getRed(): int
+    public function getRed(): float
     {
         return $this->red;
     }
 
     /**
-     * @param int $red
+     * @param float $red
      *
      * @return Color
      */
-    public function setRed(int $red): Color
+    public function setRed(float $red): Color
     {
         $this->red = $red;
 
@@ -37,19 +37,19 @@ class Color extends GoogleModel
     }
 
     /**
-     * @return int
+     * @return float
      */
-    public function getGreen(): int
+    public function getGreen(): float
     {
         return $this->green;
     }
 
     /**
-     * @param int $green
+     * @param float $green
      *
      * @return Color
      */
-    public function setGreen(int $green): Color
+    public function setGreen(float $green): Color
     {
         $this->green = $green;
 
@@ -57,19 +57,19 @@ class Color extends GoogleModel
     }
 
     /**
-     * @return int
+     * @return float
      */
-    public function getBlue(): int
+    public function getBlue(): float
     {
         return $this->blue;
     }
 
     /**
-     * @param int $blue
+     * @param float $blue
      *
      * @return Color
      */
-    public function setBlue(int $blue): Color
+    public function setBlue(float $blue): Color
     {
         $this->blue = $blue;
 
@@ -77,19 +77,19 @@ class Color extends GoogleModel
     }
 
     /**
-     * @return int
+     * @return float
      */
-    public function getAlpha(): int
+    public function getAlpha(): float
     {
         return $this->alpha;
     }
 
     /**
-     * @param int $alpha
+     * @param float $alpha
      *
      * @return Color
      */
-    public function setAlpha(int $alpha): Color
+    public function setAlpha(float $alpha): Color
     {
         $this->alpha = $alpha;
 
