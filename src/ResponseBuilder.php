@@ -75,4 +75,24 @@ class ResponseBuilder extends GoogleModel
 
         return $this;
     }
+
+    /**
+     * @return Notification
+     */
+    public function getNotification(): Notification
+    {
+        return $this->notification;
+    }
+
+    /**
+     * @param Notification $notification
+     *
+     * @return ResponseBuilder
+     */
+    public function setNotification(Notification $notification): ResponseBuilder
+    {
+        $this->notification = $notification;
+
+        return $this;
+    }
 }
