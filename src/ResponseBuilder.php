@@ -75,8 +75,4 @@ class ResponseBuilder extends GoogleModel
 
         return $this;
     }
-    public function send()
-    {
-        return response((array) $this->toSimpleObject());
-    }
 }

@@ -2,7 +2,7 @@
 
 namespace ShaileshMatariya\Gsuite\Addon;
 
-class SubmitFormResponse
+class SubmitFormResponse extends GoogleModel
 {
     /** @var RenderAction */
     public $render_actions;
