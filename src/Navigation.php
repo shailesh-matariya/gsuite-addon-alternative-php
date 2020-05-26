@@ -10,7 +10,7 @@ class Navigation extends GoogleModel
     /** @var boolean */
     public $pop;
 
-    /** @var boolean */
+    /** @var string */
     public $pop_to_card;
 
     /** @var Card */
@@ -60,19 +60,19 @@ class Navigation extends GoogleModel
     }
 
     /**
-     * @return bool
+     * @return string
      */
-    public function isPopToCard(): bool
+    public function getPopToCard(): string
     {
         return $this->pop_to_card;
     }
 
     /**
-     * @param bool $pop_to_card
+     * @param string $pop_to_card
      *
      * @return Navigation
      */
-    public function setPopToCard(bool $pop_to_card): Navigation
+    public function setPopToCard(string $pop_to_card): Navigation
     {
         $this->pop_to_card = $pop_to_card;
 

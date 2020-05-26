@@ -5,14 +5,14 @@ namespace ShaileshMatariya\Gsuite\Addon;
 class Suggestions extends GoogleModel
 {
     /** @var SuggestionItem[] */
-    public $suggestions;
+    public $items;
 
     /**
      * @return SuggestionItem[]
      */
     public function getSuggestions(): array
     {
-        return $this->suggestions;
+        return $this->items;
     }
 
     /**
@@ -22,7 +22,7 @@ class Suggestions extends GoogleModel
      */
     public function addSuggestion(SuggestionItem $suggestion): Suggestions
     {
-        $this->suggestions[] = $suggestion;
+        $this->items[] = $suggestion;
 
         return $this;
     }
@@ -34,7 +34,7 @@ class Suggestions extends GoogleModel
      */
     public function addSuggestions(array $suggestions): Suggestions
     {
-        $this->suggestions = array_merge($this->$suggestions, $suggestions);
+        $this->items = array_merge($this->$suggestions, $suggestions);
 
         return $this;
     }
@@ -46,7 +46,7 @@ class Suggestions extends GoogleModel
      */
     public function setSuggestions(array $suggestions): Suggestions
     {
-        $this->suggestions = $suggestions;
+        $this->items = $suggestions;
 
         return $this;
     }
