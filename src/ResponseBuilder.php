@@ -29,7 +29,7 @@ class ResponseBuilder extends GoogleModel
      *
      * @return ResponseBuilder
      */
-    public function setAction(ResponseAction $action): ResponseBuilder
+    public function setAction(ResponseAction $action): self
     {
         $this->action = $action;
 
@@ -49,7 +49,7 @@ class ResponseBuilder extends GoogleModel
      *
      * @return ResponseBuilder
      */
-    public function setRenderAction(RenderAction $render_action): ResponseBuilder
+    public function setRenderAction(RenderAction $render_action): self
     {
         $this->render_action = $render_action;
 
@@ -69,7 +69,7 @@ class ResponseBuilder extends GoogleModel
      *
      * @return ResponseBuilder
      */
-    public function setNavigation(Navigation $navigation): ResponseBuilder
+    public function setNavigation(Navigation $navigation): self
     {
         $this->navigation = $navigation;
 
@@ -89,7 +89,7 @@ class ResponseBuilder extends GoogleModel
      *
      * @return ResponseBuilder
      */
-    public function setNotification(Notification $notification): ResponseBuilder
+    public function setNotification(Notification $notification): self
     {
         $this->notification = $notification;
 

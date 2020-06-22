@@ -21,7 +21,7 @@ class TextParagraph extends GoogleModel
      *
      * @return TextParagraph
      */
-    public function setText(string $text): TextParagraph
+    public function setText(string $text): self
     {
         $this->text = $text;
 

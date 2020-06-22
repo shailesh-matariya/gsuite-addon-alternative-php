@@ -20,7 +20,7 @@ class SubmitFormResponseBuilder extends GoogleModel
      *
      * @return SubmitFormResponseBuilder
      */
-    public function setSubmitFormResponse(SubmitFormResponse $submit_form_response): SubmitFormResponseBuilder
+    public function setSubmitFormResponse(SubmitFormResponse $submit_form_response): self
     {
         $this->submit_form_response = $submit_form_response;
 

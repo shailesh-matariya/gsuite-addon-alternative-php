@@ -16,7 +16,7 @@ class TextInput extends GoogleModel
     /** @var string */
     public $value;
 
-    /** @var string  "enum": ["SINGLE_LINE", "MULTIPLE_LINE"], */
+    /** @var string "enum": ["SINGLE_LINE", "MULTIPLE_LINE"], */
     public $type;
 
     /** @var Action */
@@ -25,10 +25,10 @@ class TextInput extends GoogleModel
     /** @var Suggestions */
     public $initial_suggestions;
 
-    /** @var Action  The refresh function which returns suggestions based on the user's input text. */
+    /** @var Action The refresh function which returns suggestions based on the user's input text. */
     public $auto_complete_action;
 
-    /** @var boolean */
+    /** @var bool */
     public $multiple_suggestions;
 
     /**
@@ -44,7 +44,7 @@ class TextInput extends GoogleModel
      *
      * @return TextInput
      */
-    public function setName(string $name): TextInput
+    public function setName(string $name): self
     {
         $this->name = $name;
 
@@ -64,7 +64,7 @@ class TextInput extends GoogleModel
      *
      * @return TextInput
      */
-    public function setLabel(string $label): TextInput
+    public function setLabel(string $label): self
     {
         $this->label = $label;
 
@@ -84,7 +84,7 @@ class TextInput extends GoogleModel
      *
      * @return TextInput
      */
-    public function setHintText(string $hint_text): TextInput
+    public function setHintText(string $hint_text): self
     {
         $this->hint_text = $hint_text;
 
@@ -104,7 +104,7 @@ class TextInput extends GoogleModel
      *
      * @return TextInput
      */
-    public function setValue(string $value): TextInput
+    public function setValue(string $value): self
     {
         $this->value = $value;
 
@@ -124,7 +124,7 @@ class TextInput extends GoogleModel
      *
      * @return TextInput
      */
-    public function setType(string $type): TextInput
+    public function setType(string $type): self
     {
         $this->type = $type;
 
@@ -144,7 +144,7 @@ class TextInput extends GoogleModel
      *
      * @return TextInput
      */
-    public function setOnChangeAction(Action $on_change_action): TextInput
+    public function setOnChangeAction(Action $on_change_action): self
     {
         $this->on_change_action = $on_change_action;
 
@@ -164,7 +164,7 @@ class TextInput extends GoogleModel
      *
      * @return TextInput
      */
-    public function setInitialSuggestions(Suggestions $initial_suggestions): TextInput
+    public function setInitialSuggestions(Suggestions $initial_suggestions): self
     {
         $this->initial_suggestions = $initial_suggestions;
 
@@ -184,7 +184,7 @@ class TextInput extends GoogleModel
      *
      * @return TextInput
      */
-    public function setAutoCompleteAction(Action $auto_complete_action): TextInput
+    public function setAutoCompleteAction(Action $auto_complete_action): self
     {
         $this->auto_complete_action = $auto_complete_action;
 
@@ -204,7 +204,7 @@ class TextInput extends GoogleModel
      *
      * @return TextInput
      */
-    public function setMultipleSuggestions(bool $multiple_suggestions): TextInput
+    public function setMultipleSuggestions(bool $multiple_suggestions): self
     {
         $this->multiple_suggestions = $multiple_suggestions;
 

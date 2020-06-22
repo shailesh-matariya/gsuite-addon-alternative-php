@@ -4,10 +4,10 @@ namespace ShaileshMatariya\Gsuite\Addon;
 
 class OpenLink extends GoogleModel
 {
-    /** @var string  "enum": ["NOTHING","RELOAD"] */
+    /** @var string "enum": ["NOTHING","RELOAD"] */
     public $on_close;
 
-    /** @var string  "enum": [ "FULL_SIZE", "OVERLAY" ] */
+    /** @var string "enum": [ "FULL_SIZE", "OVERLAY" ] */
     public $open_as;
 
     /** @var string */
@@ -26,7 +26,7 @@ class OpenLink extends GoogleModel
      *
      * @return OpenLink
      */
-    public function setOnClose(string $on_close): OpenLink
+    public function setOnClose(string $on_close): self
     {
         $this->on_close = $on_close;
 
@@ -46,7 +46,7 @@ class OpenLink extends GoogleModel
      *
      * @return OpenLink
      */
-    public function setOpenAs(string $open_as): OpenLink
+    public function setOpenAs(string $open_as): self
     {
         $this->open_as = $open_as;
 
@@ -66,7 +66,7 @@ class OpenLink extends GoogleModel
      *
      * @return OpenLink
      */
-    public function setUrl(string $url): OpenLink
+    public function setUrl(string $url): self
     {
         $this->url = $url;
 

@@ -23,7 +23,7 @@ class CardAction extends GoogleModel
      *
      * @return CardAction
      */
-    public function setActionLabel(string $action_label): CardAction
+    public function setActionLabel(string $action_label): self
     {
         $this->action_label = $action_label;
 
@@ -43,7 +43,7 @@ class CardAction extends GoogleModel
      *
      * @return CardAction
      */
-    public function setOnClick(OnClick $on_click): CardAction
+    public function setOnClick(OnClick $on_click): self
     {
         $this->on_click = $on_click;
 

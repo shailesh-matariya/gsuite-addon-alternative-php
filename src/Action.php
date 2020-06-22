@@ -23,7 +23,7 @@ class Action extends GoogleModel
      *
      * @return Action
      */
-    public function setFunction(string $function): Action
+    public function setFunction(string $function): self
     {
         $this->function = $function;
 
@@ -43,7 +43,7 @@ class Action extends GoogleModel
      *
      * @return Action
      */
-    public function setParameters(array $parameters): Action
+    public function setParameters(array $parameters): self
     {
         $this->parameters = $parameters;
 
@@ -55,7 +55,7 @@ class Action extends GoogleModel
      *
      * @return Action
      */
-    public function addParameter(Parameter $parameter): Action
+    public function addParameter(Parameter $parameter): self
     {
         $this->parameters[] = $parameter;
 

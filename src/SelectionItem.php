@@ -10,7 +10,7 @@ class SelectionItem extends GoogleModel
     /** @var string */
     public $value;
 
-    /** @var boolean */
+    /** @var bool */
     public $selected;
 
     /**
@@ -26,7 +26,7 @@ class SelectionItem extends GoogleModel
      *
      * @return SelectionItem
      */
-    public function setText(string $text): SelectionItem
+    public function setText(string $text): self
     {
         $this->text = $text;
 
@@ -46,7 +46,7 @@ class SelectionItem extends GoogleModel
      *
      * @return SelectionItem
      */
-    public function setValue(string $value): SelectionItem
+    public function setValue(string $value): self
     {
         $this->value = $value;
 
@@ -66,7 +66,7 @@ class SelectionItem extends GoogleModel
      *
      * @return SelectionItem
      */
-    public function setSelected(bool $selected): SelectionItem
+    public function setSelected(bool $selected): self
     {
         $this->selected = $selected;
 

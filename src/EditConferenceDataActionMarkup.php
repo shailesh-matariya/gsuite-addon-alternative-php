@@ -20,7 +20,7 @@ class EditConferenceDataActionMarkup extends GoogleModel
      *
      * @return EditConferenceDataActionMarkup
      */
-    public function setSetConferenceData(ConferenceDataMarkup $set_conference_data): EditConferenceDataActionMarkup
+    public function setSetConferenceData(ConferenceDataMarkup $set_conference_data): self
     {
         $this->set_conference_data = $set_conference_data;
 

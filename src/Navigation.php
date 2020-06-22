@@ -4,10 +4,10 @@ namespace ShaileshMatariya\Gsuite\Addon;
 
 class Navigation extends GoogleModel
 {
-    /** @var boolean */
+    /** @var bool */
     public $pop_to_root;
 
-    /** @var boolean */
+    /** @var bool */
     public $pop;
 
     /** @var string */
@@ -32,7 +32,7 @@ class Navigation extends GoogleModel
      *
      * @return Navigation
      */
-    public function setPopToRoot(bool $pop_to_root): Navigation
+    public function setPopToRoot(bool $pop_to_root): self
     {
         $this->pop_to_root = $pop_to_root;
 
@@ -52,7 +52,7 @@ class Navigation extends GoogleModel
      *
      * @return Navigation
      */
-    public function setPop(bool $pop): Navigation
+    public function setPop(bool $pop): self
     {
         $this->pop = $pop;
 
@@ -72,7 +72,7 @@ class Navigation extends GoogleModel
      *
      * @return Navigation
      */
-    public function setPopToCard(string $pop_to_card): Navigation
+    public function setPopToCard(string $pop_to_card): self
     {
         $this->pop_to_card = $pop_to_card;
 
@@ -92,7 +92,7 @@ class Navigation extends GoogleModel
      *
      * @return Navigation
      */
-    public function setPushCard(Card $push_card): Navigation
+    public function setPushCard(Card $push_card): self
     {
         $this->push_card = $push_card;
 
@@ -112,7 +112,7 @@ class Navigation extends GoogleModel
      *
      * @return Navigation
      */
-    public function setUpdateCard(Card $update_card): Navigation
+    public function setUpdateCard(Card $update_card): self
     {
         $this->update_card = $update_card;
 

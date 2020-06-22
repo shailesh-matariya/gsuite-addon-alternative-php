@@ -20,7 +20,7 @@ class Suggestions extends GoogleModel
      *
      * @return Suggestions
      */
-    public function addSuggestion(SuggestionItem $suggestion): Suggestions
+    public function addSuggestion(SuggestionItem $suggestion): self
     {
         $this->items[] = $suggestion;
 
@@ -32,7 +32,7 @@ class Suggestions extends GoogleModel
      *
      * @return Suggestions
      */
-    public function addSuggestions(array $suggestions): Suggestions
+    public function addSuggestions(array $suggestions): self
     {
         $this->items = array_merge($this->$suggestions, $suggestions);
 
@@ -44,7 +44,7 @@ class Suggestions extends GoogleModel
      *
      * @return Suggestions
      */
-    public function setSuggestions(array $suggestions): Suggestions
+    public function setSuggestions(array $suggestions): self
     {
         $this->items = $suggestions;
 

@@ -46,7 +46,7 @@ class RenderAction extends GoogleModel
      *
      * @return RenderAction
      */
-    public function setHostAppAction(HostAppAction $host_app_action): RenderAction
+    public function setHostAppAction(HostAppAction $host_app_action): self
     {
         $this->host_app_action = $host_app_action;
 
@@ -66,7 +66,7 @@ class RenderAction extends GoogleModel
      *
      * @return RenderAction
      */
-    public function setSchema(string $schema): RenderAction
+    public function setSchema(string $schema): self
     {
         $this->schema = $schema;
 

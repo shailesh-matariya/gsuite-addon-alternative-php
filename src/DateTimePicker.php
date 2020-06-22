@@ -13,10 +13,10 @@ class DateTimePicker extends GoogleModel
     /** @var string "enum": ["DATE_AND_TIME", "DATE_ONLY", "TIME_ONLY"] */
     public $type;
 
-    /** @var integer */
+    /** @var int */
     public $value_ms_epoch;
 
-    /** @var integer */
+    /** @var int */
     public $timezone_offset_date;
 
     /** @var Action */
@@ -35,7 +35,7 @@ class DateTimePicker extends GoogleModel
      *
      * @return DateTimePicker
      */
-    public function setName(string $name): DateTimePicker
+    public function setName(string $name): self
     {
         $this->name = $name;
 
@@ -55,7 +55,7 @@ class DateTimePicker extends GoogleModel
      *
      * @return DateTimePicker
      */
-    public function setLabel(string $label): DateTimePicker
+    public function setLabel(string $label): self
     {
         $this->label = $label;
 
@@ -75,7 +75,7 @@ class DateTimePicker extends GoogleModel
      *
      * @return DateTimePicker
      */
-    public function setType(string $type): DateTimePicker
+    public function setType(string $type): self
     {
         $this->type = $type;
 
@@ -95,7 +95,7 @@ class DateTimePicker extends GoogleModel
      *
      * @return DateTimePicker
      */
-    public function setValueMsEpoch(int $value_ms_epoch): DateTimePicker
+    public function setValueMsEpoch(int $value_ms_epoch): self
     {
         $this->value_ms_epoch = $value_ms_epoch;
 
@@ -115,7 +115,7 @@ class DateTimePicker extends GoogleModel
      *
      * @return DateTimePicker
      */
-    public function setTimezoneOffsetDate(int $timezone_offset_date): DateTimePicker
+    public function setTimezoneOffsetDate(int $timezone_offset_date): self
     {
         $this->timezone_offset_date = $timezone_offset_date;
 
@@ -135,7 +135,7 @@ class DateTimePicker extends GoogleModel
      *
      * @return DateTimePicker
      */
-    public function setOnChangeAction(Action $on_change_action): DateTimePicker
+    public function setOnChangeAction(Action $on_change_action): self
     {
         $this->on_change_action = $on_change_action;
 

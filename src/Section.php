@@ -7,7 +7,7 @@ class Section extends GoogleModel
     /** @var Widget[] required */
     public $widgets;
 
-    /** @var boolean */
+    /** @var bool */
     public $collapsible;
 
     /** @var string */
@@ -29,7 +29,7 @@ class Section extends GoogleModel
      *
      * @return Section
      */
-    public function addWidget(Widget $widget): Section
+    public function addWidget(Widget $widget): self
     {
         $this->widgets[] = $widget;
 
@@ -49,7 +49,7 @@ class Section extends GoogleModel
      *
      * @return Section
      */
-    public function setCollapsible(bool $collapsible): Section
+    public function setCollapsible(bool $collapsible): self
     {
         $this->collapsible = $collapsible;
 
@@ -69,7 +69,7 @@ class Section extends GoogleModel
      *
      * @return Section
      */
-    public function setHeader(string $header): Section
+    public function setHeader(string $header): self
     {
         $this->header = $header;
 
@@ -89,7 +89,7 @@ class Section extends GoogleModel
      *
      * @return Section
      */
-    public function setUncollapsibleWidgetsCount(int $uncollapsible_widgets_count): Section
+    public function setUncollapsibleWidgetsCount(int $uncollapsible_widgets_count): self
     {
         $this->uncollapsible_widgets_count = $uncollapsible_widgets_count;
 
