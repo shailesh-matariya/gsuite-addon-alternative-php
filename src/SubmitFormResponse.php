@@ -7,7 +7,7 @@ class SubmitFormResponse extends GoogleModel
     /** @var RenderAction */
     public $render_actions;
 
-    /** @var boolean */
+    /** @var bool */
     public $state_changed;
 
     /**
@@ -23,7 +23,7 @@ class SubmitFormResponse extends GoogleModel
      *
      * @return SubmitFormResponse
      */
-    public function setRenderActions(RenderAction $render_actions): SubmitFormResponse
+    public function setRenderActions(RenderAction $render_actions): self
     {
         $this->render_actions = $render_actions;
 
@@ -43,7 +43,7 @@ class SubmitFormResponse extends GoogleModel
      *
      * @return SubmitFormResponse
      */
-    public function setStateChanged(bool $state_changed): SubmitFormResponse
+    public function setStateChanged(bool $state_changed): self
     {
         $this->state_changed = $state_changed;
 

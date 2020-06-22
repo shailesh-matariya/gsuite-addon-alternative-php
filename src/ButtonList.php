@@ -20,7 +20,7 @@ class ButtonList extends GoogleModel
      *
      * @return ButtonList
      */
-    public function setButtons(array $buttons): ButtonList
+    public function setButtons(array $buttons): self
     {
         $this->buttons = $buttons;
 
@@ -32,7 +32,7 @@ class ButtonList extends GoogleModel
      *
      * @return ButtonList
      */
-    public function addButton(Button $button): ButtonList
+    public function addButton(Button $button): self
     {
         $this->buttons[] = $button;
 

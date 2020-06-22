@@ -26,7 +26,7 @@ class Image extends GoogleModel
      *
      * @return Image
      */
-    public function setAltText(string $alt_text): Image
+    public function setAltText(string $alt_text): self
     {
         $this->alt_text = $alt_text;
 
@@ -46,7 +46,7 @@ class Image extends GoogleModel
      *
      * @return Image
      */
-    public function setImageUrl(string $url): Image
+    public function setImageUrl(string $url): self
     {
         $this->image_url = $url;
 
@@ -66,10 +66,10 @@ class Image extends GoogleModel
      *
      * @return Image
      */
-    public function setOnClick(OnClick $on_click): Image
+    public function setOnClick(OnClick $on_click): self
     {
         $this->on_click = $on_click;
 
         return $this;
-}
+    }
 }

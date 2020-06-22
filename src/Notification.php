@@ -20,7 +20,7 @@ class Notification extends GoogleModel
      *
      * @return Notification
      */
-    public function setText(string $text): Notification
+    public function setText(string $text): self
     {
         $this->text = $text;
 

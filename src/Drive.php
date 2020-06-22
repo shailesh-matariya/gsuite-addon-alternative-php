@@ -20,7 +20,7 @@ class Drive extends GoogleModel
      *
      * @return Drive
      */
-    public function setDriveClientActionMarkup(DriveClientActionMarkup $drive_client_action_markup): Drive
+    public function setDriveClientActionMarkup(DriveClientActionMarkup $drive_client_action_markup): self
     {
         $this->drive_client_action_markup = $drive_client_action_markup;
 

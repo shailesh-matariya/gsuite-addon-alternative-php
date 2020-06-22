@@ -8,7 +8,7 @@ use stdClass;
 
 class GoogleModel
 {
-    const NULL_VALUE = "{}gapi-php-null";
+    const NULL_VALUE = '{}gapi-php-null';
     protected $modelData = [];
 
     public function toSimpleObject()
@@ -35,9 +35,9 @@ class GoogleModel
      */
     private function getSimpleValue($value)
     {
-        if ($value instanceof GoogleModel) {
+        if ($value instanceof self) {
             return $value->toSimpleObject();
-        } else if (is_array($value)) {
+        } elseif (is_array($value)) {
             $return = [];
             foreach ($value as $key => $a_value) {
                 $a_value = $this->getSimpleValue($a_value);
@@ -58,7 +58,7 @@ class GoogleModel
     private function nullPlaceholderCheck($value)
     {
         if ($value === self::NULL_VALUE) {
-            return null;
+            return;
         }
 
         return $value;

@@ -32,7 +32,7 @@ class SelectionInput extends GoogleModel
      *
      * @return SelectionInput
      */
-    public function setName(string $name): SelectionInput
+    public function setName(string $name): self
     {
         $this->name = $name;
 
@@ -52,7 +52,7 @@ class SelectionInput extends GoogleModel
      *
      * @return SelectionInput
      */
-    public function setLabel(string $label): SelectionInput
+    public function setLabel(string $label): self
     {
         $this->label = $label;
 
@@ -72,7 +72,7 @@ class SelectionInput extends GoogleModel
      *
      * @return SelectionInput
      */
-    public function setType(string $type): SelectionInput
+    public function setType(string $type): self
     {
         $this->type = $type;
 
@@ -92,7 +92,7 @@ class SelectionInput extends GoogleModel
      *
      * @return SelectionInput
      */
-    public function setItems(array $items): SelectionInput
+    public function setItems(array $items): self
     {
         $this->items = $items;
 
@@ -112,7 +112,7 @@ class SelectionInput extends GoogleModel
      *
      * @return SelectionInput
      */
-    public function setOnChangeAction(Action $on_change_action): SelectionInput
+    public function setOnChangeAction(Action $on_change_action): self
     {
         $this->on_change_action = $on_change_action;
 

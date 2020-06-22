@@ -23,7 +23,7 @@ class CalendarClientActionMarkup extends GoogleModel
      *
      * @return CalendarClientActionMarkup
      */
-    public function setEditAttendeesActionMarkup(EditAttendeesActionMarkup $edit_attendees_action_markup): CalendarClientActionMarkup
+    public function setEditAttendeesActionMarkup(EditAttendeesActionMarkup $edit_attendees_action_markup): self
     {
         $this->edit_attendees_action_markup = $edit_attendees_action_markup;
 
@@ -43,7 +43,7 @@ class CalendarClientActionMarkup extends GoogleModel
      *
      * @return CalendarClientActionMarkup
      */
-    public function setEditConferenceDataActionMarkup(EditConferenceDataActionMarkup $edit_conference_data_action_markup): CalendarClientActionMarkup
+    public function setEditConferenceDataActionMarkup(EditConferenceDataActionMarkup $edit_conference_data_action_markup): self
     {
         $this->edit_conference_data_action_markup = $edit_conference_data_action_markup;
 

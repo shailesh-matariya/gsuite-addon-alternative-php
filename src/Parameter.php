@@ -23,7 +23,7 @@ class Parameter extends GoogleModel
      *
      * @return Parameter
      */
-    public function setKey(string $key): Parameter
+    public function setKey(string $key): self
     {
         $this->key = $key;
 
@@ -43,7 +43,7 @@ class Parameter extends GoogleModel
      *
      * @return Parameter
      */
-    public function setValue(string $value): Parameter
+    public function setValue(string $value): self
     {
         $this->value = $value;
 

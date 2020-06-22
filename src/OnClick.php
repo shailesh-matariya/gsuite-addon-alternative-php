@@ -29,7 +29,7 @@ class OnClick extends GoogleModel
      *
      * @return OnClick
      */
-    public function setAction(Action $action): OnClick
+    public function setAction(Action $action): self
     {
         $this->action = $action;
 
@@ -49,7 +49,7 @@ class OnClick extends GoogleModel
      *
      * @return OnClick
      */
-    public function setOpenDynamicLinkAction(Action $open_dynamic_link_action): OnClick
+    public function setOpenDynamicLinkAction(Action $open_dynamic_link_action): self
     {
         $this->open_dynamic_link_action = $open_dynamic_link_action;
 
@@ -69,7 +69,7 @@ class OnClick extends GoogleModel
      *
      * @return OnClick
      */
-    public function setCard(Card $card): OnClick
+    public function setCard(Card $card): self
     {
         $this->card = $card;
 
@@ -89,10 +89,10 @@ class OnClick extends GoogleModel
      *
      * @return OnClick
      */
-    public function setOpenLink(OpenLink $open_link): OnClick
+    public function setOpenLink(OpenLink $open_link): self
     {
         $this->open_link = $open_link;
 
         return $this;
-}
+    }
 }

@@ -20,7 +20,7 @@ class SuggestionItem extends GoogleModel
      *
      * @return SuggestionItem
      */
-    public function setText(string $text): SuggestionItem
+    public function setText(string $text): self
     {
         $this->text = $text;
 
