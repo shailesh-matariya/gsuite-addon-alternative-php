@@ -19,7 +19,7 @@ class DecoratedText extends GoogleModel
     /** @var string */
     public $text;
 
-    /** @var boolean */
+    /** @var bool */
     public $wrap_text;
 
     /** @var string top label */
@@ -44,7 +44,7 @@ class DecoratedText extends GoogleModel
      *
      * @return DecoratedText
      */
-    public function setBottomLabel(string $bottom_label): DecoratedText
+    public function setBottomLabel(string $bottom_label): self
     {
         $this->bottom_label = $bottom_label;
 
@@ -64,7 +64,7 @@ class DecoratedText extends GoogleModel
      *
      * @return DecoratedText
      */
-    public function setButton(Button $button): DecoratedText
+    public function setButton(Button $button): self
     {
         $this->button = $button;
 
@@ -84,7 +84,7 @@ class DecoratedText extends GoogleModel
      *
      * @return DecoratedText
      */
-    public function setIcon(Icon $icon): DecoratedText
+    public function setIcon(Icon $icon): self
     {
         $this->icon = $icon;
 
@@ -104,7 +104,7 @@ class DecoratedText extends GoogleModel
      *
      * @return DecoratedText
      */
-    public function setWrapText(bool $wrap_text): DecoratedText
+    public function setWrapText(bool $wrap_text): self
     {
         $this->wrap_text = $wrap_text;
 
@@ -124,7 +124,7 @@ class DecoratedText extends GoogleModel
      *
      * @return DecoratedText
      */
-    public function setTopLabel(string $top_label): DecoratedText
+    public function setTopLabel(string $top_label): self
     {
         $this->top_label = $top_label;
 
@@ -144,7 +144,7 @@ class DecoratedText extends GoogleModel
      *
      * @return DecoratedText
      */
-    public function setSwitchControl(SwitchControl $switch_control): DecoratedText
+    public function setSwitchControl(SwitchControl $switch_control): self
     {
         $this->switch_control = $switch_control;
 
@@ -164,7 +164,7 @@ class DecoratedText extends GoogleModel
      *
      * @return DecoratedText
      */
-    public function setText(string $text): DecoratedText
+    public function setText(string $text): self
     {
         $this->text = $text;
 
@@ -184,7 +184,7 @@ class DecoratedText extends GoogleModel
      *
      * @return DecoratedText
      */
-    public function setImageType(string $image_type): DecoratedText
+    public function setImageType(string $image_type): self
     {
         $this->image_type = $image_type;
 
@@ -204,7 +204,7 @@ class DecoratedText extends GoogleModel
      *
      * @return DecoratedText
      */
-    public function setOnClick(OnClick $on_click): DecoratedText
+    public function setOnClick(OnClick $on_click): self
     {
         $this->on_click = $on_click;
 

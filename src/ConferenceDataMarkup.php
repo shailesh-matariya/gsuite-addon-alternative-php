@@ -32,7 +32,7 @@ class ConferenceDataMarkup extends GoogleModel
      *
      * @return ConferenceDataMarkup
      */
-    public function setConferenceId(string $conference_id): ConferenceDataMarkup
+    public function setConferenceId(string $conference_id): self
     {
         $this->conference_id = $conference_id;
 
@@ -52,7 +52,7 @@ class ConferenceDataMarkup extends GoogleModel
      *
      * @return ConferenceDataMarkup
      */
-    public function setEntryPoint(array $entry_point): ConferenceDataMarkup
+    public function setEntryPoint(array $entry_point): self
     {
         $this->entry_point = $entry_point;
 
@@ -64,7 +64,7 @@ class ConferenceDataMarkup extends GoogleModel
      *
      * @return ConferenceDataMarkup
      */
-    public function addEntryPoint(EntryPoint $entry_point): ConferenceDataMarkup
+    public function addEntryPoint(EntryPoint $entry_point): self
     {
         $this->entry_point[] = $entry_point;
 
@@ -84,7 +84,7 @@ class ConferenceDataMarkup extends GoogleModel
      *
      * @return ConferenceDataMarkup
      */
-    public function setParameter(array $parameter): ConferenceDataMarkup
+    public function setParameter(array $parameter): self
     {
         $this->parameter = $parameter;
 
@@ -96,7 +96,7 @@ class ConferenceDataMarkup extends GoogleModel
      *
      * @return ConferenceDataMarkup
      */
-    public function addParameter(Parameter $parameter): ConferenceDataMarkup
+    public function addParameter(Parameter $parameter): self
     {
         $this->parameter[] = $parameter;
 
@@ -116,7 +116,7 @@ class ConferenceDataMarkup extends GoogleModel
      *
      * @return ConferenceDataMarkup
      */
-    public function setError(Error $error): ConferenceDataMarkup
+    public function setError(Error $error): self
     {
         $this->error = $error;
 
@@ -136,7 +136,7 @@ class ConferenceDataMarkup extends GoogleModel
      *
      * @return ConferenceDataMarkup
      */
-    public function setNotes(string $notes): ConferenceDataMarkup
+    public function setNotes(string $notes): self
     {
         $this->notes = $notes;
 

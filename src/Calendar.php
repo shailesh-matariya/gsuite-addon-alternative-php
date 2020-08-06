@@ -7,10 +7,10 @@ class Calendar extends GoogleModel
     /** @var EditAttendeesActionMarkup */
     public $edit_attendees_action_markup;
 
-    /** @var  EditConferenceDataActionMarkup */
+    /** @var EditConferenceDataActionMarkup */
     public $edit_conference_data_action_markup;
 
-    /** @var  CalendarClientActionMarkup */
+    /** @var CalendarClientActionMarkup */
     public $calendar_client_action_markup;
 
     /**
@@ -26,7 +26,7 @@ class Calendar extends GoogleModel
      *
      * @return Calendar
      */
-    public function setEditAttendeesActionMarkup(EditAttendeesActionMarkup $edit_attendees_action_markup): Calendar
+    public function setEditAttendeesActionMarkup(EditAttendeesActionMarkup $edit_attendees_action_markup): self
     {
         $this->edit_attendees_action_markup = $edit_attendees_action_markup;
 
@@ -46,7 +46,7 @@ class Calendar extends GoogleModel
      *
      * @return Calendar
      */
-    public function setEditConferenceDataActionMarkup(EditConferenceDataActionMarkup $edit_conference_data_action_markup): Calendar
+    public function setEditConferenceDataActionMarkup(EditConferenceDataActionMarkup $edit_conference_data_action_markup): self
     {
         $this->edit_conference_data_action_markup = $edit_conference_data_action_markup;
 
@@ -66,7 +66,7 @@ class Calendar extends GoogleModel
      *
      * @return Calendar
      */
-    public function setCalendarClientActionMarkup(CalendarClientActionMarkup $calendar_client_action_markup): Calendar
+    public function setCalendarClientActionMarkup(CalendarClientActionMarkup $calendar_client_action_markup): self
     {
         $this->calendar_client_action_markup = $calendar_client_action_markup;
 

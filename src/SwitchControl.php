@@ -10,7 +10,7 @@ class SwitchControl extends GoogleModel
     /** @var string */
     public $value;
 
-    /** @var boolean */
+    /** @var bool */
     public $selected;
 
     /** @var Action */
@@ -32,7 +32,7 @@ class SwitchControl extends GoogleModel
      *
      * @return SwitchControl
      */
-    public function setName(string $name): SwitchControl
+    public function setName(string $name): self
     {
         $this->name = $name;
 
@@ -52,7 +52,7 @@ class SwitchControl extends GoogleModel
      *
      * @return SwitchControl
      */
-    public function setValue(string $value): SwitchControl
+    public function setValue(string $value): self
     {
         $this->value = $value;
 
@@ -72,7 +72,7 @@ class SwitchControl extends GoogleModel
      *
      * @return SwitchControl
      */
-    public function setSelected(bool $selected): SwitchControl
+    public function setSelected(bool $selected): self
     {
         $this->selected = $selected;
 
@@ -92,7 +92,7 @@ class SwitchControl extends GoogleModel
      *
      * @return SwitchControl
      */
-    public function setOnChangeAction(Action $on_change_action): SwitchControl
+    public function setOnChangeAction(Action $on_change_action): self
     {
         $this->on_change_action = $on_change_action;
 
@@ -112,7 +112,7 @@ class SwitchControl extends GoogleModel
      *
      * @return SwitchControl
      */
-    public function setControlType(string $control_type): SwitchControl
+    public function setControlType(string $control_type): self
     {
         $this->control_type = $control_type;
 

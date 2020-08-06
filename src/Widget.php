@@ -25,7 +25,7 @@ class Widget extends GoogleModel
     /** @var DateTimePicker */
     public $date_time_picker;
 
-    /** @var string  "enum": [ "START", "CENTER", "END" ] */
+    /** @var string "enum": [ "START", "CENTER", "END" ] */
     public $horizontal_alignment;
 
     /**
@@ -41,7 +41,7 @@ class Widget extends GoogleModel
      *
      * @return Widget
      */
-    public function setImage(Image $image): Widget
+    public function setImage(Image $image): self
     {
         $this->image = $image;
 
@@ -53,7 +53,7 @@ class Widget extends GoogleModel
      *
      * @return Widget
      */
-    public function setTextParagraph(TextParagraph $text_paragraph): Widget
+    public function setTextParagraph(TextParagraph $text_paragraph): self
     {
         $this->text_paragraph = $text_paragraph;
 
@@ -73,7 +73,7 @@ class Widget extends GoogleModel
      *
      * @return Widget
      */
-    public function setDecoratedText(DecoratedText $decorated_text): Widget
+    public function setDecoratedText(DecoratedText $decorated_text): self
     {
         $this->decorated_text = $decorated_text;
 
@@ -93,7 +93,7 @@ class Widget extends GoogleModel
      *
      * @return Widget
      */
-    public function setButtonList(ButtonList $button_list): Widget
+    public function setButtonList(ButtonList $button_list): self
     {
         $this->button_list = $button_list;
 
@@ -113,7 +113,7 @@ class Widget extends GoogleModel
      *
      * @return Widget
      */
-    public function setTextInput(TextInput $text_input): Widget
+    public function setTextInput(TextInput $text_input): self
     {
         $this->text_input = $text_input;
 
@@ -133,7 +133,7 @@ class Widget extends GoogleModel
      *
      * @return Widget
      */
-    public function setSelectionInput(SelectionInput $selection_input): Widget
+    public function setSelectionInput(SelectionInput $selection_input): self
     {
         $this->selection_input = $selection_input;
 
@@ -153,7 +153,7 @@ class Widget extends GoogleModel
      *
      * @return Widget
      */
-    public function setDateTimePicker(DateTimePicker $date_time_picker): Widget
+    public function setDateTimePicker(DateTimePicker $date_time_picker): self
     {
         $this->date_time_picker = $date_time_picker;
 
@@ -173,7 +173,7 @@ class Widget extends GoogleModel
      *
      * @return Widget
      */
-    public function setHorizontalAlignment(string $horizontal_alignment): Widget
+    public function setHorizontalAlignment(string $horizontal_alignment): self
     {
         $this->horizontal_alignment = $horizontal_alignment;
 

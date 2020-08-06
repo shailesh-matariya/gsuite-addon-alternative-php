@@ -26,7 +26,7 @@ class ResponseAction extends GoogleModel
      *
      * @return ResponseAction
      */
-    public function addNavigation(Navigation $navigation): ResponseAction
+    public function addNavigation(Navigation $navigation): self
     {
         $this->navigations[] = $navigation;
 
@@ -46,7 +46,7 @@ class ResponseAction extends GoogleModel
      *
      * @return ResponseAction
      */
-    public function setLink(OpenLink $link): ResponseAction
+    public function setLink(OpenLink $link): self
     {
         $this->link = $link;
 
@@ -66,7 +66,7 @@ class ResponseAction extends GoogleModel
      *
      * @return ResponseAction
      */
-    public function setNotification(Notification $notification): ResponseAction
+    public function setNotification(Notification $notification): self
     {
         $this->notification = $notification;
 

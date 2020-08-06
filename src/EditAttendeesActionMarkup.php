@@ -20,7 +20,7 @@ class EditAttendeesActionMarkup extends GoogleModel
      *
      * @return EditAttendeesActionMarkup
      */
-    public function setAddAttendeeEmails(array $add_attendee_emails): EditAttendeesActionMarkup
+    public function setAddAttendeeEmails(array $add_attendee_emails): self
     {
         $this->add_attendee_emails = $add_attendee_emails;
 
@@ -32,7 +32,7 @@ class EditAttendeesActionMarkup extends GoogleModel
      *
      * @return EditAttendeesActionMarkup
      */
-    public function addAttendeeEmail(string $add_attendee_email): EditAttendeesActionMarkup
+    public function addAttendeeEmail(string $add_attendee_email): self
     {
         $this->add_attendee_emails[] = $add_attendee_email;
 

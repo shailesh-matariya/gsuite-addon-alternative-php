@@ -16,7 +16,7 @@ class Button extends GoogleModel
     /** @var OnClick */
     public $on_click;
 
-    /** @var boolean */
+    /** @var bool */
     public $disabled;
 
     /**
@@ -32,7 +32,7 @@ class Button extends GoogleModel
      *
      * @return Button
      */
-    public function setText(string $text): Button
+    public function setText(string $text): self
     {
         $this->text = $text;
 
@@ -52,7 +52,7 @@ class Button extends GoogleModel
      *
      * @return Button
      */
-    public function setIcon(Icon $icon): Button
+    public function setIcon(Icon $icon): self
     {
         $this->icon = $icon;
 
@@ -72,7 +72,7 @@ class Button extends GoogleModel
      *
      * @return Button
      */
-    public function setColor(Color $color): Button
+    public function setColor(Color $color): self
     {
         $this->color = $color;
 
@@ -92,7 +92,7 @@ class Button extends GoogleModel
      *
      * @return Button
      */
-    public function setOnClick(OnClick $on_click): Button
+    public function setOnClick(OnClick $on_click): self
     {
         $this->on_click = $on_click;
 
@@ -112,7 +112,7 @@ class Button extends GoogleModel
      *
      * @return Button
      */
-    public function setDisabled(bool $disabled): Button
+    public function setDisabled(bool $disabled): self
     {
         $this->disabled = $disabled;
 

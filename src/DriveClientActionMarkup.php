@@ -20,7 +20,7 @@ class DriveClientActionMarkup extends GoogleModel
      *
      * @return DriveClientActionMarkup
      */
-    public function setRequestFileScope(RequestFileScope $request_file_scope): DriveClientActionMarkup
+    public function setRequestFileScope(RequestFileScope $request_file_scope): self
     {
         $this->request_file_scope = $request_file_scope;
 

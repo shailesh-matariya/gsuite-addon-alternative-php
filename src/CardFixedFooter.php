@@ -23,7 +23,7 @@ class CardFixedFooter extends GoogleModel
      *
      * @return CardFixedFooter
      */
-    public function setPrimaryButton(Button $primary_button): CardFixedFooter
+    public function setPrimaryButton(Button $primary_button): self
     {
         $this->primary_button = $primary_button;
 
@@ -43,7 +43,7 @@ class CardFixedFooter extends GoogleModel
      *
      * @return CardFixedFooter
      */
-    public function setSecondaryButton(Button $secondary_button): CardFixedFooter
+    public function setSecondaryButton(Button $secondary_button): self
     {
         $this->secondary_button = $secondary_button;
 

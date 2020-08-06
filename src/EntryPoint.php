@@ -49,7 +49,7 @@ class EntryPoint extends GoogleModel
      *
      * @return EntryPoint
      */
-    public function setType(string $type): EntryPoint
+    public function setType(string $type): self
     {
         $this->type = $type;
 
@@ -69,7 +69,7 @@ class EntryPoint extends GoogleModel
      *
      * @return EntryPoint
      */
-    public function setUri(string $uri): EntryPoint
+    public function setUri(string $uri): self
     {
         $this->uri = $uri;
 
@@ -89,7 +89,7 @@ class EntryPoint extends GoogleModel
      *
      * @return EntryPoint
      */
-    public function setLabel(string $label): EntryPoint
+    public function setLabel(string $label): self
     {
         $this->label = $label;
 
@@ -109,7 +109,7 @@ class EntryPoint extends GoogleModel
      *
      * @return EntryPoint
      */
-    public function setMeetingCode(string $meeting_code): EntryPoint
+    public function setMeetingCode(string $meeting_code): self
     {
         $this->meeting_code = $meeting_code;
 
@@ -129,7 +129,7 @@ class EntryPoint extends GoogleModel
      *
      * @return EntryPoint
      */
-    public function setAccessCode(string $access_code): EntryPoint
+    public function setAccessCode(string $access_code): self
     {
         $this->access_code = $access_code;
 
@@ -149,7 +149,7 @@ class EntryPoint extends GoogleModel
      *
      * @return EntryPoint
      */
-    public function setPasscode(string $passcode): EntryPoint
+    public function setPasscode(string $passcode): self
     {
         $this->passcode = $passcode;
 
@@ -169,7 +169,7 @@ class EntryPoint extends GoogleModel
      *
      * @return EntryPoint
      */
-    public function setPassword(string $password): EntryPoint
+    public function setPassword(string $password): self
     {
         $this->password = $password;
 
@@ -189,7 +189,7 @@ class EntryPoint extends GoogleModel
      *
      * @return EntryPoint
      */
-    public function setPin(string $pin): EntryPoint
+    public function setPin(string $pin): self
     {
         $this->pin = $pin;
 
@@ -209,7 +209,7 @@ class EntryPoint extends GoogleModel
      *
      * @return EntryPoint
      */
-    public function setRegionCode(string $region_code): EntryPoint
+    public function setRegionCode(string $region_code): self
     {
         $this->region_code = $region_code;
 
@@ -229,7 +229,7 @@ class EntryPoint extends GoogleModel
      *
      * @return EntryPoint
      */
-    public function setFeatures(array $feature): EntryPoint
+    public function setFeatures(array $feature): self
     {
         $this->feature = $feature;
 
@@ -243,7 +243,7 @@ class EntryPoint extends GoogleModel
      *
      * @return EntryPoint
      */
-    public function addFeature($feature): EntryPoint
+    public function addFeature($feature): self
     {
         $this->feature[] = $feature;
 

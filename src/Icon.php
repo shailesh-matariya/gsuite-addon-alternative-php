@@ -59,7 +59,7 @@ class Icon extends GoogleModel
      *
      * @return Icon
      */
-    public function setKnownIcon(string $known_icon): Icon
+    public function setKnownIcon(string $known_icon): self
     {
         $this->known_icon = $known_icon;
 
@@ -79,7 +79,7 @@ class Icon extends GoogleModel
      *
      * @return Icon
      */
-    public function setIconUrl(string $icon_url): Icon
+    public function setIconUrl(string $icon_url): self
     {
         $this->icon_url = $icon_url;
 
@@ -99,7 +99,7 @@ class Icon extends GoogleModel
      *
      * @return Icon
      */
-    public function setAltText(string $alt_text): Icon
+    public function setAltText(string $alt_text): self
     {
         $this->alt_text = $alt_text;
 

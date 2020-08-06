@@ -20,7 +20,7 @@ class RequestFileScope extends GoogleModel
      *
      * @return RequestFileScope
      */
-    public function setItemId(string $item_id): RequestFileScope
+    public function setItemId(string $item_id): self
     {
         $this->item_id = $item_id;
 

@@ -23,7 +23,7 @@ class AutocompletionResponse extends GoogleModel
      *
      * @return AutocompletionResponse
      */
-    public function setAutoComplete(Suggestions $auto_complete): AutocompletionResponse
+    public function setAutoComplete(Suggestions $auto_complete): self
     {
         $this->auto_complete = $auto_complete;
 
@@ -43,7 +43,7 @@ class AutocompletionResponse extends GoogleModel
      *
      * @return AutocompletionResponse
      */
-    public function setSchema(string $schema): AutocompletionResponse
+    public function setSchema(string $schema): self
     {
         $this->schema = $schema;
 

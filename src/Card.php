@@ -38,7 +38,7 @@ class Card extends GoogleModel
      *
      * @return Card
      */
-    public function setName(string $name): Card
+    public function setName(string $name): self
     {
         $this->name = $name;
 
@@ -58,7 +58,7 @@ class Card extends GoogleModel
      *
      * @return Card
      */
-    public function setHeader(CardHeader $header): Card
+    public function setHeader(CardHeader $header): self
     {
         $this->header = $header;
 
@@ -78,7 +78,7 @@ class Card extends GoogleModel
      *
      * @return Card
      */
-    public function addSection(Section $section): Card
+    public function addSection(Section $section): self
     {
         $this->sections[] = $section;
 
@@ -98,7 +98,7 @@ class Card extends GoogleModel
      *
      * @return Card
      */
-    public function setCardActions(CardAction $card_actions): Card
+    public function setCardActions(CardAction $card_actions): self
     {
         $this->card_actions = $card_actions;
 
@@ -118,7 +118,7 @@ class Card extends GoogleModel
      *
      * @return Card
      */
-    public function setDisplayStyle(string $display_style): Card
+    public function setDisplayStyle(string $display_style): self
     {
         $this->display_style = $display_style;
 
@@ -138,7 +138,7 @@ class Card extends GoogleModel
      *
      * @return Card
      */
-    public function setFixedFooter(CardFixedFooter $fixed_footer): Card
+    public function setFixedFooter(CardFixedFooter $fixed_footer): self
     {
         $this->fixed_footer = $fixed_footer;
 
@@ -158,7 +158,7 @@ class Card extends GoogleModel
      *
      * @return Card
      */
-    public function dfsetPeekCardHeader(CardHeader $peek_card_header): Card
+    public function dfsetPeekCardHeader(CardHeader $peek_card_header): self
     {
         $this->peek_card_header = $peek_card_header;
 

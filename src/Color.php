@@ -29,7 +29,7 @@ class Color extends GoogleModel
      *
      * @return Color
      */
-    public function setRed(float $red): Color
+    public function setRed(float $red): self
     {
         $this->red = $red;
 
@@ -49,7 +49,7 @@ class Color extends GoogleModel
      *
      * @return Color
      */
-    public function setGreen(float $green): Color
+    public function setGreen(float $green): self
     {
         $this->green = $green;
 
@@ -69,7 +69,7 @@ class Color extends GoogleModel
      *
      * @return Color
      */
-    public function setBlue(float $blue): Color
+    public function setBlue(float $blue): self
     {
         $this->blue = $blue;
 
@@ -89,7 +89,7 @@ class Color extends GoogleModel
      *
      * @return Color
      */
-    public function setAlpha(float $alpha): Color
+    public function setAlpha(float $alpha): self
     {
         $this->alpha = $alpha;
 

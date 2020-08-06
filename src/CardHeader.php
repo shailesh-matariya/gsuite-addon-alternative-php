@@ -16,7 +16,7 @@ class CardHeader extends GoogleModel
     /** @var string */
     public $title;
 
-    /** @var string  "enum": [ "SQUARE", "CIRCLE" ],  */
+    /** @var string "enum": [ "SQUARE", "CIRCLE" ], */
     public $image_type;
 
     /**
@@ -32,7 +32,7 @@ class CardHeader extends GoogleModel
      *
      * @return CardHeader
      */
-    public function setImageAltText(string $image_alt_text): CardHeader
+    public function setImageAltText(string $image_alt_text): self
     {
         $this->image_alt_text = $image_alt_text;
 
@@ -52,7 +52,7 @@ class CardHeader extends GoogleModel
      *
      * @return CardHeader
      */
-    public function setImageType(string $image_type): CardHeader
+    public function setImageType(string $image_type): self
     {
         $this->image_type = $image_type;
 
@@ -72,7 +72,7 @@ class CardHeader extends GoogleModel
      *
      * @return CardHeader
      */
-    public function setImageUrl(string $image_url): CardHeader
+    public function setImageUrl(string $image_url): self
     {
         $this->image_url = $image_url;
 
@@ -92,7 +92,7 @@ class CardHeader extends GoogleModel
      *
      * @return CardHeader
      */
-    public function setSubtitle(string $subtitle): CardHeader
+    public function setSubtitle(string $subtitle): self
     {
         $this->subtitle = $subtitle;
 
@@ -112,7 +112,7 @@ class CardHeader extends GoogleModel
      *
      * @return CardHeader
      */
-    public function setTitle(string $title): CardHeader
+    public function setTitle(string $title): self
     {
         $this->title = $title;
 
