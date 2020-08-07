@@ -1,6 +1,6 @@
 <?php
 
-namespace ShaileshMatariya\Gsuite\Addon\Utils;
+namespace ShaileshMatariya\Gsuite\Addon;
 
 class SelectionInputType
 {
