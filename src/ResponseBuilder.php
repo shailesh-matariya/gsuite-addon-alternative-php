@@ -14,7 +14,7 @@ class ResponseBuilder extends GoogleModel
     public $action;
 
     /** @var RenderAction */
-    public $render_action;
+    public $render_actions;
 
     /**
      * @return ResponseAction
@@ -41,7 +41,7 @@ class ResponseBuilder extends GoogleModel
      */
     public function getRenderAction(): RenderAction
     {
-        return $this->render_action;
+        return $this->render_actions;
     }
 
     /**
@@ -51,7 +51,7 @@ class ResponseBuilder extends GoogleModel
      */
     public function setRenderAction(RenderAction $render_action): self
     {
-        $this->render_action = $render_action;
+        $this->render_actions = $render_action;
 
         return $this;
     }
